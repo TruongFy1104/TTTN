@@ -1,0 +1,236 @@
+.btn-delete {
+  background: #ef4444;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.btn-delete:hover {
+  background: #b91c1c;
+}
+.import-dropzone {
+  border: 2px dashed #2563eb;
+  background: #f3f4fa;
+  border-radius: 12px;
+  padding: 32px 24px;
+  text-align: center;
+  color: #2563eb;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 24px;
+  transition: background 0.2s, border-color 0.2s;
+}
+.import-dropzone.dragover {
+  background: #e0e7ff;
+  border-color: #1d4ed8;
+  color: #1d4ed8;
+}
+.add-data-flex > div {
+  flex: 1 1 0;
+  min-width: 0;
+  width: 50%;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f6f8fa;
+}
+.main-bg {
+  min-height: 100vh;
+  background: #f6f8fa;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+.add-data-flex {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+.add-data-flex > div {
+  flex: 1 1 400px;
+  min-width: 320px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.header nav {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.header nav a {
+  display: inline-block;
+  background: #2563eb;
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+  transition: background 0.2s, transform 0.2s;
+}
+.header nav a:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px) scale(1.05);
+}
+
+.header h1 {
+  color: #2563eb;
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+.header p {
+  color: #555;
+  font-size: 1.1rem;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.column {
+  flex: 1 1 350px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 24px;
+  margin-bottom: 0;
+}
+.card h2 {
+  font-size: 1.3rem;
+  color: #2563eb;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+form input, form select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+form button,
+.btn-find,
+.btn-delete,
+.btn-confirm {
+  min-width: 110px;
+  min-height: 40px;
+  font-size: 1rem;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s;
+}
+form button:hover {
+  background: #1d4ed8;
+}
+.list {
+  max-height: 220px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3f4f6;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 1rem;
+}
+.bold {
+  font-weight: bold;
+}
+.small {
+  font-size: 0.95rem;
+  color: #555;
+}
+.btn-find {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.btn-find:hover {
+  background: #4338ca;
+}
+.card .loading {
+  color: #2563eb;
+  font-style: italic;
+  margin-top: 8px;
+}
+.result-box {
+  background: #e0f7e9;
+  border: 1px solid #34d399;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 12px;
+}
+.green {
+  color: #059669;
+}
+.btn-confirm {
+  background: #059669;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+.btn-confirm:hover {
+  background: #047857;
+}
+.alert {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .grid {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .container {
+    padding: 10px;
+  }
+}
